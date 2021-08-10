@@ -101,30 +101,16 @@ modalCloses.forEach((modalClose) => {
 
 //$==================== PORTFOLIO SWIPER  ====================
 
-/* let swiperPortafolio = new Swiper('.portfolio__container', {
-    cssMode: true,
-    loop: true,
-
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-}); */
 var swiper = new Swiper(".mySwiper", {
     direction: 'horizontal',
     loop: true,
     pagination: {
         el: ".swiper-pagination"
     },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    }
 });
-
 
 
 //!==================== TESTIMONIAL ====================
@@ -228,3 +214,15 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+//* Formulario contact
+/* const eventSend = document.getElementById('send');
+const sendForm = () => {
+    let nombre = document.getElementById('nombres').value;
+    let email = document.getElementById('email').value;
+    let project = document.getElementById('project').value;
+    let message = document.getElementById('message').value;
+    let phone = +527222018275
+    let win = window.open(`https://wa.me/${phone}?text=Hola%${nombre}%20${email}%20${project}%20${message}`)
+}
+eventSend.addEventListener('click', sendForm) */
