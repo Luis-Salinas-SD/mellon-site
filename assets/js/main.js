@@ -185,7 +185,7 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/
+//& ==================== DARK LIGHT THEME ====================
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
@@ -215,14 +215,25 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-//* Formulario contact
-/* const eventSend = document.getElementById('send');
-const sendForm = () => {
-    let nombre = document.getElementById('nombres').value;
-    let email = document.getElementById('email').value;
-    let project = document.getElementById('project').value;
-    let message = document.getElementById('message').value;
-    let phone = +527222018275
-    let win = window.open(`https://wa.me/${phone}?text=Hola%${nombre}%20${email}%20${project}%20${message}`)
+//* ------------------------> Formulario <----------------------------
+const formulario = document.querySelector('#formulario');
+
+formulario.addEventListener('submit', handleSubmit)
+
+async function handleSubmit(evento) {
+    evento.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    //* --------->Response de fetch <---------
+    if (response.ok) {
+        alert('mensaje enviado con exito')
+    } else {
+        console.warn('algo salió mal' + error);
+    }
 }
-eventSend.addEventListener('click', sendForm) */

@@ -1280,6 +1280,9 @@ button {
     .portfolio__content {
         column-gap: 1rem;
     }
+    .portfolio__img {
+        justify-self: flex-end;
+    }
     .swiper-portfolio-icon {
         font-size: 3.5rem;
     }

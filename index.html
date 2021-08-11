@@ -665,7 +665,8 @@
                                 El diseño se tomó de un reto del sitio Frontend Mentor y
                                 se realizó con tecnologías como HTML, CSS y Javascript.
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://melon-blog.netlify.app/" target="_blank"
+                                class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -681,7 +682,8 @@
                                 Pequeño prototipo finalizado de una landing page en el cual
                                 se pone al alcance todos los servicios del Desarrollador Web.
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://luis-salinas-cv.netlify.app/" target="_blank"
+                                class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -697,7 +699,8 @@
                                 Simula el consumo de una API pública con ayuda de Javascript
                                 y para el diseño de interfaces HTML y CSS.
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://luis-salinas-sd.github.io/pokeapi/" target="_blank"
+                                class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -713,7 +716,8 @@
                                 Sitio web de una productora de alimentos para llegar a un mayor
                                 alcance a sus clientes y provedores.
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://www.alimentosbea.com/"
+                                class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -729,7 +733,8 @@
                                 Template de un sitio web básico con la integracion del consmuo
                                 de una API Privada
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://luis-salinas-sd.github.io/practica-web/" target="_blank"
+                                class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -745,7 +750,8 @@
                                 Consume una API pública y muestra los datos en forma de tabla, con bootstrap y JS para
                                 el consumo de la API.
                             </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="https://luis-salinas-sd.github.io/fetch-example-InformaticaDP/" target="_blank"
+                                class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -810,29 +816,29 @@
                     </div>
                 </div>
                 <!--% Form -->
-                <form action="https://formspree.io/f/mrgrywry" method="POST" class="contact__form grid">
+                <form action="https://formspree.io/f/mrgrywry" method="POST" id="formulario" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <!--# Name  -->
                         <div class="contact__content">
                             <labe class="contact__label">Nombre</labe>
-                            <input type="text" class="contact__input" id="nombres" name="nombre">
+                            <input type="text" class="contact__input" id="nombres" name="nombre" required>
                         </div>
                         <!--# E-mail -->
                         <div class="contact__content">
                             <labe class="contact__label">Email</labe>
-                            <input type="email" class="contact__input" id="email" name="email">
+                            <input type="email" class="contact__input" id="email" name="email" required>
                         </div>
                     </div>
                     <!--# Proyecto -->
                     <div class="contact__content">
                         <labe class="contact__label">Proyecto</labe>
-                        <input type="text" class="contact__input" id="project" name="project">
+                        <input type="text" class="contact__input" id="project" name="project" required>
                     </div>
                     <!--# Mensaje -->
                     <div class="contact__content">
                         <labe class="contact__label">Mensaje</labe>
-                        <textarea name="" id="message" cols="0" rows="7" class="contact__input"
-                            name="message"></textarea>
+                        <textarea id="message" cols="0" rows="7" class="contact__input" name="mensaje"
+                            required></textarea>
                     </div>
                     <div>
                         <button class="button button--flex" id="send">
