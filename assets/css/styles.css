@@ -381,6 +381,7 @@ button {
 
 .button:hover {
     background-color: var(--first-color-alt);
+    color: white;
 }
 
 .button__icon {
@@ -840,6 +841,7 @@ button {
 .project__bg {
     background-color: var(--first-color-second);
     padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .project__title {
@@ -857,6 +859,8 @@ button {
 
 .project__img {
     width: 232px;
+    border-radius: var(--mb-0-75);
+    margin: auto;
 }
 
 /*==================== TESTIMONIAL ====================*/
@@ -1102,7 +1106,7 @@ button {
     }
 }
 
-/* For medium devices */
+/** For medium devices */
 
 @media screen and (min-width: 568px) {
     .home__content {
@@ -1127,6 +1131,10 @@ button {
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+    .project__img {
+        width: 200px;
+        margin: auto;
     }
 }
 
@@ -1237,7 +1245,7 @@ button {
     .project__container {
         background-color: var(--first-color-second);
         border-radius: 1rem;
-        padding: 3rem 2.5rem 0;
+        padding: 3rem 2.5rem 1.5rem;
         grid-template-columns: 1fr max-content;
         column-gap: 3rem;
     }
