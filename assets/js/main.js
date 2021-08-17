@@ -233,6 +233,7 @@ async function handleSubmit(evento) {
     //* --------->Response de fetch <---------
     if (response.ok) {
         alert('mensaje enviado con exito')
+        this.reset()
     } else {
         console.warn('algo salió mal' + error);
     }
