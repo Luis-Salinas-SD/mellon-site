@@ -804,13 +804,15 @@ button {
 }
 
 .swiper-button-prev {
-    left: -1rem;
+    left: .5rem;
     top: 6rem;
+    color: var(--first-color);
 }
 
 .swiper-button-next {
-    right: -1rem;
+    right: .5rem;
     top: 6rem;
+    color: var(--first-color);
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets {
@@ -1104,6 +1106,10 @@ button {
     .testimonial__data, .testimonial__description {
         text-align: center;
     }
+    .swiper-button-prev {
+        left: 1rem;
+        color: coral;
+    }
 }
 
 /** For medium devices */
@@ -1135,6 +1141,9 @@ button {
     .project__img {
         width: 200px;
         margin: auto;
+    }
+    .portafolio{
+        background-color: cornflowerblue;
     }
 }
 
@@ -1228,6 +1237,10 @@ button {
     }
     .services__modal-content {
         width: 400px;
+    }
+    .swiper-button-prev {
+        left: 3.5rem;
+        color: var(--first-color);
     }
     .portfolio__img {
         width: 320px;
