@@ -1,5 +1,5 @@
 <?php
-$name = $_POST['name'];
+$name = $_POST['nombre'];
 $mail = $_POST['email'];
 $project = $_POST['project'];
 $message = $_POST['mensaje'];
@@ -10,7 +10,10 @@ $destinatario = "hola@cerolineal.com";
 $asunto = "Proyecto desde cerolineal.com";
 
 $carta = "De: $name \n";
-$carta = "Correo: $mail \n";
+$carta .= "Correo: $mail \n";
+$carta .= "\n";
+$carta .= "Proyecto: $project \n";
+$carta .= "Mensaje:\n $message";
 
 //Envio del correo
 mail($destinatario, $asunto, $carta);
