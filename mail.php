@@ -6,8 +6,8 @@ $message = $_POST['mensaje'];
 
 //Datos para el correo
 
-$destinatario = "contacto@cerolineal.com";
-$asunto = "Contacto cerolinal.com.mx";
+$destinatario = "contacto@lusa.com";
+$asunto = "Contacto desde LUSA.com";
 
 $carta = "De: $name \n";
 $carta .= "Correo: $mail \n";
@@ -17,4 +17,4 @@ $carta .= "Mensaje:\n $message";
 
 //Envio del correo
 mail($destinatario, $asunto, $carta);
-header('Location:https://cerolineal.com.mx');
+header('Location:https://lusa.com');
